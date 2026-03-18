@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
                 ('votos', models.IntegerField(default=0)),
                 ('data_criacao', models.DateTimeField(verbose_name='Criado em ')),
                 ('usuario', models.CharField(default='anônimo', max_length=200)),
-                ('pergunta', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='blog.pergunta')),
+                ('pergunta', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='forum.pergunta')),
             ],
         ),
     ]
