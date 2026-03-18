@@ -2,7 +2,7 @@ from django.urls import path
 
 from . import views
 
-app_name = 'forum'
+app_name = 'blog'
 urlpatterns = [
     # ex: /forum/
     path("", views.MainView.as_view(), name="index"),
